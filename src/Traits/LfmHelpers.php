@@ -477,7 +477,7 @@ trait LfmHelpers
             'size'    => $is_file ? $this->humanFilesize(File::size($item)) : '',
             'updated' => filemtime($item),
             'path'    => $is_file ? '' : $this->getInternalPath($item),
-            'time'    => date('Y-m-d h:i', filemtime($item)),
+            'time'    => date('Y-m-d H:i', filemtime($item)),
             'type'    => $file_type,
             'icon'    => $icon,
             'thumb'   => $thumb_url,
